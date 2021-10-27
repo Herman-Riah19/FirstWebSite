@@ -1,0 +1,141 @@
+body
+{
+	background-color:lightgrey;
+}
+.body{
+	background-color:lightgray;
+	width:1000px;
+	margin-left:150px;
+	border-style:none;
+	background-position:center;
+}
+.menu{
+	background-color:gray;
+	
+	box-shadow: 0 1px 3px rgba(145,33,0,0.15),0 1px 2px rgba(0,0,0,0.24);
+	display:flex;
+}
+
+.menu a{
+	display:flex;
+	text-decoration:none;
+	text-align:center;
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+	color:bababa;
+	border-right:1px solid lightgray;
+	border-left:1px solid lightgray;
+	border-top:1px solid lightgray;
+	border-bottom:1px solid lightgray;
+}
+a:hover{
+	background-color: lightgray;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+
+
+div{
+	background-color:darkgray;
+	background-position:center;
+	border-style:inset;
+	margin-left:90px;
+	margin-right:-10px;
+	padding-left:10px;
+	border-top-color:lightgray;
+	border-bottom-color:lightgray;
+	border-left:black;
+	overflow: visible;
+	border-right:black;
+	padding-right:50px;
+}
+h1{
+	float:right;
+	clear:both;
+	margin-left:80px;
+	text-align:center;
+	font-family:"Times New Roman",Verdana,serif;
+	background-color: cornflowerblue;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+	border-color:cornflowerblue;
+	color:red;
+}
+img{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:100px;
+	width:500px;
+	height:200px;
+}
+ol type=I
+{
+	float:right;
+	padding-left:120px;
+	margin-left:80px;
+	font-style: Italic;
+	color:green;
+}
+p: first-lettre{
+		text-transform:capitalize; 
+		color:black; }
+.titre
+{
+	text-align:justify;
+	size:6;
+	color:green;
+}
+
+.por
+{
+	color:rgba(173, 179, 123, 0.767);
+}
+.bleu
+{
+	list-style-type:disc;
+	list-style-position:inside;
+	color:blue;
+}
+.local
+{
+	size:4;
+	color:azure;
+}
+.belge
+{
+	list-style-type:square;
+	color:darkgoldenrod;
+}
+.crime
+{
+	list-style-position:inside;
+	list-style-type:square;
+	border-left:20px;
+	color:crimson;
+}
+
+.demo
+{
+	color : hotpink;
+	size : 7;
+}
+.special
+{
+	color:green;
+	
+}
+hr
+{
+	width : 200px noshade;
+}
+.fixed{
+	position: fixed;
+	top:0;
+}

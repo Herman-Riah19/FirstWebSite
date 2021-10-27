@@ -1,0 +1,245 @@
+﻿<!--commentaire-->
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/fich.css"/>
+        <title>électronique numérique</title>
+		<script src = "monScript.js"></script>
+    </head>
+    <body>
+		<header id = "menu">
+				<a href="HTML.html">Acceuil</a>
+		</header>
+		<div class="body">
+		<font class="local">
+			<center><h1><font class="crime"> ÉLECTRONIQUE NUMÉRIQUE</Center></h1></font>
+			<div>
+				<A Name="pro"></A>
+					<h1><font color="crimson">Programme</font></h1>
+					<ul>
+						<li><A href="#général"><h2>Généralité</A></h2>
+						<li><A href="#Portel"><h2>Portes logiques</h2></A>
+						<li><A href="#Conception"><h2>Conception de circuit logique</h2></A>
+					</ul>
+			</div>
+			<div>
+			<A name="général"></A>
+				<font size=4>
+				<ol type=I>
+					<li><b><u>Les différentes Types des bases:</b></u><br>
+						<font><u class="special"> Introduction</font></u><br>
+						<font class="local">
+							Dans la vie quotidienne, les être humains utilisent les nombres décimales ou appelle aussi <b>les nombres bases 10</b> pour 
+							compter ou faire des calculs.... Dans le monde informatique, les matériels électroniques ne connaient que des <span class="crime">
+							Binaire</span>(base 2), <span class="crime">octal</span>(base 8), <span class="crime">hexadécimal</span>(base 16).
+						</font><p>
+							<ol type=1>
+								<li class="belge"><u>Base 10 ou décimal:</u><br> 
+								<font class="local">
+									E={0,1,2,3,4,5,6,7,8,9}<br> 
+									On appel <span style=" position absolute; color:red">nombre P</span> si il est élément de E*={0,1,2,3,4,5,6,7,8,9}<br> 
+									Pour compté:<center><br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9(+1)(fin du symbole)<br>10<br>11<br>12<br>...<br>19(+1)<br>
+									20<br>21....</center><br>
+								</font>
+								<li class="bele"><u class="belge">Base 2 ou Binaire:</u><br>
+								<font class="local">
+									E={0,1}<br>E*{0,1, 10,11,100,101,...}<br>
+									Pour compté:<br>
+										<center>0<br>1(+1)<br>10<br>11<br>100<br>101<br>110<br>111<br>1000<br></center>
+								</font>
+								<li class="belge"><u>Base 8 ou octal:</u><br>
+								<font class="local">
+									E={0,1,2,3,4,5,6,7}<br>E={0,1,2,3,4,5,6,7,10,11,12,...}<br>
+									Pour compté:<br>
+									<center>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7(+1)<br>10<br>11<br>...<br>17(+1)<br>20<br>...<br>77(+1)<br>100...<br></center>
+								</font>
+								<li class="belge"><u>Base 16 ou hexadécimal:</u><br>
+									<font class="local">
+										E={0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}<br>
+										E*={0,1,2,...,8,9,A,B,...,F,10,11,12,...}<br>
+									</font>
+							</ol>
+<p><u class="por">II-Système de numération et code:</u><br>
+<ul><li><u class="belge">1- Système de numération:</u><br>
+<ul>
+<li><u class="special">a- Conversation base b en base 10:</u><br>
+<font color="azure">Soit A un nombre écrit en base <b>b</b> et A peut s'écrire:<br>
+<table border=1>
+<tr>
+<td><font color="blue"><font size=7>Ab=(an,a(n-1),a(n-2),....,a1,a0)b</font></td>
+</tr>
+</table>
+
+<br>
+<b><u>Ex:</b></u> <ul><il>A2=( 1 0 1 )2          Ici b=2   a2=1   a1=0   a0=1<br>
+<il>   a2 a1 a0<br></ul>
+
+Pour convertir cet nombre, on applique la formule:<br>
+<table border=1>
+<tr>
+<td><font size=7><font color="blue">A10=(anbn+a(n-1)b(n-1)+...+a1b1+a0b0)10</font> </td>
+</tr></table>
+<br>
+<li><u class="special">b-Conversion base 10 en base b:</font></u><br>
+
+Pour convertir un nombre base 10 en base quelconque, on utilise la méthode de division<b> Euclidienne</b>.<br> Soit A un nombre en base 10. Si <font color="crimson"> A>b </font> on subdivise A par b successivement et à chaque division on obtient des restes <b>rn,r(n-1),r(n-2),...,r1,r0.</b><br>
+<table border>
+<TR>
+<TD><Font size=7><font color="blue">A10=(en,r(n-1),...,r1,r0)</font><TD>
+</TR></table>
+<br>
+</ul>
+<li><u class="belge">2- Code:</u><br>
+On appelle<b> code</b> , la manière de convertir un symbole à un autre symbole dans un language.<br>
+on appel <b> Codage</b> l'ensemble des symboles dans le code.<br>
+<b><u>Ex:</u></b>code                                              <br>  
+<table border=1 width=40%>
+<TR>
+<TD><Font size=7>à coder</TD> <TD><Font size=7>code</TD></TR>
+<TR>
+<TD><Font size=7>A</TD><TD><Font size=7>-•-•</TD>
+<TR>
+<TD><Font size=7>M</TD><TD><Font size=7>•--•</TD></TR>
+</Table>
+<br> Codage
+=>MAMA:•--•,-•-•,•--•,-•-•<br> 
+
+
+<ol type=a><li><u class="special"> Code DCB(Décimal Code Binaire)</u><br>
+<table border=1 width=40%>
+<CAPTION align=top><b><u><font size=5>Tableau de Conversion</b></u></CAPTION>
+<TR>
+<TD><Font color="crimson"><font size=6>Décimal</TD>
+<TD><font color="crimson"><font size=6>DCB</Font></TD>
+</TR>
+<TR>
+<TD><Font size=5>0</TD><TD><Font size=5>0000</TD>
+</TR>
+<TR>
+<TD><Font size=5>1</TD><TD><Font size=5>0001</TD></TR>
+<TR><TD><Font size=5>2</TD><TD><Font size=5>0010</TD></TR>
+<TR><TD><Font size=5>3</TD><TD><Font size=5>0011</TD></TR>
+<TR><TD><Font size=5>4</TD><TD><Font size=5>0100</TD></TR>
+<TR><TD><Font size=5>5</TD><TD><Font size=5>0101</TD></TR>
+<TR><TD><Font size=5>6</TD><TD><Font size=5>0110</TD></TR>
+<TR><TD><Font size=5>7</TD><TD><Font size=5>0111</TD></TR>
+<TR><TD><Font size=5>8</TD><TD><Font size=5>1000</TD></TR>
+<TR><TD><Font size=5>9</TD><TD><Font size=5>1001</TD></TR>
+
+</Table>
+<u class="crime">Remarque:</u> Le code DCB est différent du code Binaire.<br>
+<b><u>ex:</b></u> (28)10-->(11100)2-->(00101000)DCB<br>
+
+<li><u class="special">Code Majoré 3(+3):</u><br>
+<Table border=1 width=40%>
+<CAPTION align=top><b><u><font size=5>Tableau de Conversion</b></u></CAPTION>
+<TR><TD><Font class="crime"><Font size=5>Décimal</TD><TD><font color="crimson"><Font size=5>(+1)</font></TD></TR>
+<TR><TD><Font color="black"><Font size=5>0</TD><TD><Font size=5>0011</TD></TR>
+<TR><TD><Font size=5>1</TD><TD><Font size=5>0100</TD></TR>
+<TR><TD><Font size=5>2</TD><TD><Font size=5>0101</TD></TR>
+<TR><TD><Font size=5>3</TD><TD><Font size=5>0110</TD></TR>
+<TR><TD><Font size=5>4</TD><TD><Font size=5>0111</TD></TR>
+<TR><TD><Font size=5>5</TD><TD><Font size=5>1000</TD></TR>
+<TR><TD><Font size=5>6</TD><TD><Font size=5>1001</TD></TR>
+<TR><TD><Font size=5>7</TD><TD><Font size=5>1010</TD></TR>
+<TR><TD><Font size=5>8</TD><TD><Font size=5>1011</TD></TR>
+<TR><TD><Font size=5>9</TD><TD><Font size=5>1100</TD></TR>
+</Table>
+<p><br>
+<A href="#pro">retour au programme</A>
+
+
+<p>
+<hr size=4 noshade>
+<A Name="Portel"></A>
+<h1 ><font class="crime">Les portes logiques ET Algèbres Booléennes</H1></font>
+<hr>
+<ul><il><font size=6><u class="por">I- Introduction:</u><br>
+Dans un circuit logique Électronique, les portes logiques jouent le rôle de traitement des informations.<p>
+<il><u class="por">II- Les opérations:</u><br>
+Il y a 3 opérations possibles:<ol type=1>
+<li><u class="belge">Multiplication logique(ET):</u><br>
+Soient <b>A,B</b> deux variables Boolean, si on traite A et B par la porte logique ET, on a <table border><tr><td><Font color="blue"><font size=7>S=A•B</td></tr></table>
+<table border=1 width=40%>
+<CAPTION align=top><font size=6><font class="crime">Table de vérité</font></CAPTION>
+<TR><TD><b>A</b></TD><TD><b>B</b></TD><TD><b>C</b></TD></TR>
+<TR><TD>0</TD><TD>0</TD><TD>0</TD></TR>
+<TR><TD>0</TD><TD>1</TD><TD>0</TD></TR>
+<TR><TD>1</TD><TD>0</TD><TD>0</TD></TR>
+<TR><TD>1</TD><TD>1</TD><TD>1</TD></TR>
+</Table>
+<li><u class="belge">Addition logique(OU):</u><br>
+Soient <b>A,B</b> deux variables Booleans, si on traite A et B par la porte logique OU, on a <table border><tr><td><font class="ver"><font size=7>S=A+B</td></tr></table>
+<table border=1 Width=40%>
+<CAPTION align=top><font size=6><font class="crime">Table de vérité</font></CAPTION>
+<TR><TD>0</TD><TD>0</TD><TD>0</TD></TR>
+<TR><TD>0</TD><TD>1</TD><TD>1</TD></TR>
+
+<TR><TD>1</TD><TD>0</TD><TD>1</TD></TR>
+<TR><TD>1</TD><TD>1</TD><TD>1</TD></TR>
+</table>
+<li><u class="belge">Inversion logique(NON):</u><br>
+Elle ne concerne qu'une variable, si on a <b>A</b> qu'on va traiter par l'inverseur logique, à la sortie <table border><tr><td><font class="ver"><font size=7>S=Ā</TD></TR></table>
+<table border=1 width=40%>
+<CAPTION align=top><font class="demo"><u><font size=6>Table de vérité</font></u></CAPTION>
+<TR><TD><Font color="crimson">A</TD><TD><font color="crimson">S=Ā</TD></TR>
+<TR><TD>0</TD><TD>1</TD></TR>
+<TR><TD>1</TD><TD>0</TD></TR>
+</Table>
+</ol><p>
+
+<il><u class="por">III- Théorème de Bool:</font></u><br>
+<ol type=a><li><u class="special">Théorème à une variable:</u><br>
+<ol type=1><li>A+A=A
+<li>A+0=A
+<li> A+1=1
+<li>A+Ā=1
+<li>A•A=A
+<li>A•0=0
+<li>A•1=A
+<li>A•Ā=0
+</ol>
+<li><u class="special">Théorème à plusieurs variables:</u><br>
+<ol type=1><li>A•B=B•A
+<li>A+B=B+A
+<li>A•(B•C)=(A•B)•C=A•B•C
+<li>A+(B+C)=(A+B)+C=A+B+C
+<li>(A+B)•(C+D)=A•C+A•D+B•C+B•D
+<li>A•(B+C)=A•B+A•C
+<li>A+ĀB=A+B
+<li>A+AB=A
+</ol><p>
+<li><u class="special">Théorème de Demorgan:</u><br>
+  <table>
+<tr><td>_____</td><td></td><td>__</td></tr>
+<tr><td><font size=5>A+B=</td><td><font size=5>Ā • B</td></tr>
+
+<tr><td>_____</td><td></td><td>__</td></tr>
+<tr><td><font size=5>A•B=</td><td><font size=5>Ā + B</td></tr>
+</table>
+</ol></ol>
+<br><br>
+<center><A href="#pro">retour au programme</A></center>
+<p>
+<hr size=4 noshade>
+<A Name="Conception"></A>
+<h1><center><font class="crime">Conception D'un Circuit Logique à Partir D'une Table de Vérité</font></center></h1>
+<hr>
+<p>
+<font size=6>
+Il est facile d'exprimer la fonction sortie en fonction des variables d'entrées d'une Table de Vérité:<br>
+<ul><font color="darkgoldenrod">
+<li>Repéré toutes les combinaisons qui donnent 1 à la sortie;
+<li>Créer des termes ET pour chaque combinaison Repéré(<font color="black">Complémenter les variables à l'état 0</font>);
+<li>Rassembler tous les termes ET obtenu au moyenne de l'opérateur OU ce qui nous donne l'expression logique;
+<li>Créer le circuit logique correspondant à l'expression obtenu.
+</ul>
+<p>
+<center><A href="#pro">retour au programme</A></center>
+
+<hr size=4 noshade>
+ <br>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+﻿<!--commentaire-->
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/fich.css"/>
+		<link rel="stylesheet" href="css/Bootstrap.min.css">
+		<title>Système d'exploitation</title>
+		<script src = "monScript.js"></script>
+    </head>
+    <body>
+			<header>
+					<nav class="navbar navbar-expand-md navbar-dark fixed-top menu">
+						<a class="navbar-brand" href="HTML.html">Acceuil</a>
+					</nav>
+				</header>
+	<div class="container-lag container body">
+		<h1><center> SYSTÈMES D'EXPLOITATION</center></h1>
+		<div>
+		<p class="por"><font size=4>
+		<ol type = "I" class = "titre">
+			<li><u>Définition:</p></u> 
+				<ul type="disc">
+					<li class="bleu"><b><u>Système d'exploitation:</b></u>
+					<font class="local">
+						c'est un ensemble de programme qui dirige l'utilisation des ressources d'un ordinateur par des logiciels applicatives. Il assure le 
+						démarrage de l'ordinateur et fournit au programme applicative des interfaces standardisés pour les périphériques.<br>
+					</font>
+					<li class="bleu"><b><u>Logiciel:</b></u><font class="local">c'est l'ensemble des programmes.</font><br>
+					<li class="bleu"><b><u>Programme:</b></u><font class="local"> C'est l'ensemble des instructions à exécuter.</font><br>
+				</ul>
+				<p class="por">
+			<li><u>Sa composition:</p></u>
+				<ul type="disc" class="bleu">
+					<li class="bleu"><u>D'un noyau;</u>
+					<li class="bleu"><u>Des bibliothèques dynamiques:</u> 
+						<font class="local">regroupent les opérations les plus 
+							utilisées dans les programmes informatiques. Afin d'éviter la redondance de ces 
+							opérations dans tous les programmes. Certains système d'exploitation ne proposent 
+							pas de bibliothèque Dynamique.
+						</font>
+					<li class="bleu"><u>Les outils systèmes:</u> 
+						<font class="local">permettent de configurer le système et de passer le 
+							relais aux applications proposant des services à un ou plusieurs utilisateurs ou à 
+							l'autre utilisateur.<br>
+						</font>
+					<li class="bleu"><u>Programmes applicatives de base:</u>
+						<font class="local">Offrent des services à l'utilisateur
+							(ex: navigateur web, éditeur de texte,...)<br>
+						</font>
+				</ul>
+				<p class="por">
+			<li><u>Rôles:</p></u>
+				<ul style="square">
+					<li class="bleu"><b><u>Gestion des périphériques:</b></u> <font class="local">au moyen de pilote.</font><br>
+					<li class="bleu"><b><u>Gestion des processus:</b></u> 
+					<ul type="circle" class="crime">
+						<li>Attribution de la mémoire à chaque processus;<br> 
+						<li>Ordonnancement des processus( répartition du temps d'exécution sur le ou 
+						les processus;<br> 
+						<li>Synchronisation et communication entre processus<br>
+					</ul> <br>
+				</ul>
+
+				<p class="por">
+			<A name = "programme"></A>
+			<li><u>Les autres Rôles de système d'exploitation:</p></u>
+				<ol type=1 class="bleu">
+					<li><A href="#chapI">Gestion de fichier</A><br>
+					<li><A href="#chapII">Gestion de processus</A><br>
+					<li><A href="#chapIII">Gestion d'entrée/Sortie</A><br>
+					<li><A href="#chapVI">Gestion des mémoires</A><br>
+				</ol><br>
+		</ol>
+		</div>
+	</div>
+	<div class="body">
+		<A name = "chapI"></A>
+        <h1 class="titre"><center><u class = "crime">Chapitre I: </u>GESTION DE FICHIER </h1></center>
+		<div>
+		<ol style=1 color="darkturquoise"><font class="special">
+			<li><u>Définition:</u><br>
+			<font class="local">
+				<b><u class="bleu">Système de fichier:</b></u> ou File system en Anglais 
+				c'est une méthode de données persistantes sur un médium durable( disque dur, CD, USB,...). 
+				Il offre une vue abstraite des données. Son unité de stockage est le <span class="belge"> 
+				octet</span>, le groupe de fichier est ranger dans un système appelé <span class="belge"> 
+				répertoires ou dossier</span> qui est organisé dans un <b class="belge"> Arborescence</b>.<br>
+				Chaque objet(répertoire, fichier,...) est identifiée par:
+				<ul>
+					<li><b><u class="bleu">Un Nom:</b></u> c'est une chaine de caractères de taille parfois 
+					limité dans laquelle certaines caractères peuvent être interdits.<br>
+					<li><b><u class="bleu">Des propriété:</b></u> concernent notamment la protection d'accès 
+					en lecture et/ou en écriture, le propriétaire du fichier,...<br>
+					<li><b><u class="bleu">Système de fichier:</b></u>ex: 
+					<ul>
+						<li>FAT: Disquette, Clé USB
+						<li> NTFS: Windows
+						<li>Ext2, Ext3, Ext4: Linux.
+						<li>ISO 9660: CD
+						<li>UDF: DVD
+					</ul>
+					Les données sont normalement représenté à l'utilisateur et au programme selon une 
+					organisation structurée sous la forme de répertorier et de fichier pour pouvoir stocker 
+					ses données structurées sur un périphérique.
+				</ul></font>
+			<li><u>structure de fichier:</u> <br><font class="local"> 
+				<ul>
+					<li><b><u class="crime"><i>Suite d'octet:</b></u></i> le SE  ne gère que les octets.<br> 
+					<li><b><u class="crime"><i>Suite d'enregistrement:</b></u></i>lecture et écriture des 
+					enregistrements<br> 
+					<li><b><u class="crime"><i>Arborescence d'enregistrement:</b></u></i>de différentes tailles 
+					et chacun a une clé vers une position donnée.<br>
+				</ul></font>
+			<li><u>Type de fichier:</u><br><font class="local"> 
+					<ul>
+						<li><u class="crime"><b>Fichier ordinaire:</span></u></b> ASCII, Binaire.<br>
+						<li><u class="crime"><b>Fichier catalogue:</u></b> fichier système.
+					</ul>
+						Le système mémorise: <span class="belge"> le nom, Attributs et l'adresse</span> qui est le 
+						référence dans la mémoire pour localiser le fichier.<br>
+					<br></font>
+			<li><u>Acces au fichier:</u><font class="local">
+					<ul>
+						<li><u class="crime"><b>Accès séquentiel:</b></u>un processus peut lire tous les octets 
+						ou enregistrements d'un fichier dans l'ordre à partir du début du fichier.
+						<li><u class="crime"><b>Accès aléatoire:</u></b> Les octets ou enregistrements peuvent être 
+						lu dans un ordre quelconque.<br>
+						<li><u class="crime"><b>Attributs des fichiers:</u></b>tous les systèmes d'exploitation 
+						associe des informations complémentaires à chaque fichier: date de création, protection, 
+						taille , type de fichier, ...Ce sont les attributs d'un fichier.
+					</ul></font>
+			<li><u>Mise en oeuvre du système de fichier:</u><font class="local">
+				d'un point de vue concepteur:
+					<ul>
+						<li> L'organisation de l'espace disque, le sauvegarde des fichiers, garantie un fonctionnement
+						efficace et fiable.
+						<li> Le stockage de fichier consiste à la mémorisation des adresses de chaque fichier: 
+						Allocation contiguë en espace mémoire, Allocation aux moyens d'une liste chaîné, Allocation 
+						indexé, noeud information(information node)
+						<li> La fonction principale du système de fichier est établir la correspondance entre le chemin 
+						d'accès et les informations requises pour trouver les données.
+					</ul></font>
+			<li><u>Fonction de système de fichier:</u><br><font class="local">
+					<ul>
+						<li style="square"><font class="crime">Manipulation de fichier par les programmes d'application qui sert la 
+						création, destruction, insertion,suppression de fichier et la modification d'un article dans 
+						le fichier.<br>
+						<li style="square">Allocation de la place sur la mémoire secondaire<br>
+						<li style="square">Location des fichiers par ces attributs regroupé dans i-node<br>
+						<li style="square">Sécurité et contrôle de fichier </font>
+					</ul></font><br>
+		</ol></font>
+		</div>
+		<A href = "#programme">Retour au programme</A>
+	</div>
+	<div class="body">
+		<A name = "chapII"></A>
+		<h1 class="titre"><b><center><u class = "crime">Chapitre II:</u> GESTION DE PROCESSUS</h1></b></center><br>
+		<div>
+			<font size=4>
+			<ol type=1>
+				<li class="special"><u>Définition</u><br> 
+					<font class="local">
+					<ul>
+						<li><u class="bleu"><i>Ordonnanceur:</b></u></i> s'il y a plusieurs processeurs, l'exécution des processus est distribué de façon équitable sur ces 
+						processus.<br>
+					</ul>
+					</font>
+				<li class="special"><u>Objectif et Rôles:</u><br>
+					<ul>
+						<li class="demo"><u>Objectif:</u> <font class="local">Utiliser efficacement Les ressources de la machine<br></font>
+						<li class="demo"><u>Rôles:</u><font class="local">
+						<ul>
+							<li>Déterminer quel tâches doit d'exécuter en priorité et sur quel processeur.<br> 
+							<li>Gérer l'ordre dans laquelle les instructions de différentes tâches sont exécutés.<br>
+							<li>Il est responsable de la commutation de contexte ( sauvegarde, restoration du contexte des tâches, ce contexte est constitué 
+							des registres processeurs).<br>
+						</ul>
+					</ul>
+					</font>
+				<li class="special"><u>Types et stratégie:</u><br>  <font class="local">
+					<ul >
+						<li><b><u class="bleu"><i>Préemptif:</b></u></i> suspension de processus en exécution et le choix du prochain à exécuter par 
+						l'ordonnanceur.<br> 
+						<li><b><u class="bleu"><i>Nom Préemptif ou coopératif:</b></u></i> chaque processus doit suspendre de lui même son exécution pour 
+						permettre aux autres de d'exécuter.
+					</ul><br><br>
+					</font>
+			</ol>
+			<font class="local"> La Fonction primordial d'un système d'exploitation sont:<br> 
+			<ul class = "crime">
+				<il>D'envoyer les commandes aux périphériques<br> 
+				<il>Intercepter les interruptions<br>
+				<il>Traiter les Erreurs<br>
+			</ul></font>
+		</div>
+		<A href = "#programme">Retour au programme</A>
+	</div>
+	<div class = "body">
+		<A name = "chapIII"></A>
+        <h1 class="titre"><i> <u class = "crime">Chapitre III: </u> GESTION D'ENTRÉE/ SORTIE</h1></i>
+		<div>
+			<ol type = 1>
+				<il><font size=4><u class="special">Principe des E/S du point de vue matériel: </u><br>
+					<font class="local">
+					Il y a Deux catégories de périphérique:<br>
+					<ul>
+						<il><b><u class="bleu">Périphérique bloc:</b></u> Mémorise les informations dans des blocs de taille fixe et d'adresse fixe, permettent de
+						lire ou écrire un bloc indépendamment de tout les autres. ex: les disques durs.<br> 
+						<il><b><u class="bleu">Périphérique caractère:</b></u> accepte un flot de caractères de n'importe quelle structure de bloc, mais il ne 
+						peut 
+						pas être adressé et ne possède pas de fonction de recherche. ex: clavier, souris, interface réseau.<br> 
+					</ul>
+					Les Composants mécanique et électronique Composants de l'unité d'E/S s'appelle <span class="crime"> les contrôleurs de périphérique</span>. 
+					Ces rôles sont:<br>
+					<ul>
+						<il><span class="belge">Communiquer avec le système d'exploitation;<br>
+						<il>Communiquer avec le processeur par l'intermédiaire de quelques registres;<br> 
+						<il>Se situer dans l'espace mémoire.</span><br>
+					</ul><br>
+					
+				<il><u class="special">Principe logiciel d'E/S:</u>
+					<b><u class="bleu"><i> OBJECTIFS:</span></b></u></i> 
+					<ul class="belge">
+						<il>Indépendance vis à vis du matériel<br>
+						<il>Uniformisation des noms;<br> 
+						<il>Gestion des Erreurs; <br> 
+						<il>Distinction entre le transfert synchrone et asynchrone;<br> 
+						<il>Différenciation entre périphérique partagé et dédié.</font>
+					</ul><br>
+				<br>
+			</ol>
+		</div>
+		<A href = "#programme">Retour au programme</A>
+	</div>
+	<div class = "body">
+		<A name = "chapVI"></A>
+			<h1 class="titre"><center><u class = "crime">Chapitre VI: </U> GESTIONS DES MEMOIRES </h1></center><br>
+			<div>
+				<font size=4>
+				<ol type = "1" class = "crime">
+					<li><u>Rôle:</u><br> <font class="local">Le système d'exploitation alloue de la mémoire avec le processeur lorsqu'ils 
+						on a besoin. Cette mémoire allouée est par défaut propre au processeur qu'on fait la demande.<br></font><br> 
+					<li><u>Principe de fonctionnement</u><br>  
+						<ul class = "bleu" type = "disc">
+							<li>Le système d'exploitation masque la localisation physique de la mémoire( RAM/ sur Disque dur)<br> 
+							<li>Présente au programme une mémoire virtuelle ou une mémoire globale uniforme.<br>  
+							<li>Tout processus doit manipuler une mémoire qui a le propriété.<br> 
+							<li>les programmes dans l'espace utilisateur demandent au noyau de la mémoire.<br> 
+							<li>Le noyau fait appel à son gestionnaire de mémoire pour allouer ou non la mémoire au processus qui l'a demandé.<br> 
+							<li>Si le programme tente d'utiliser des ondes mémoires ne lui pas appartenant pas, il est <span class="crime"> évincé </span><br>
+						</ul>.  
+				<u class="crime"> Remarque:</u><br><font class = "local"> Pour les mémoires manipulés par les processus: <br>
+				<ul> 
+					<li>La mémoire allouée commence systématiquement à l'adresse 0.<br> 
+					<li>La mémoire peut être étendu jusqu'au capacité théorique de la machine.<br> 
+					<li>Elle est <b class = "crime">privée</b> (protéger).<br> 
+					<li>Le processus ne peut pas accéder à la mémoire d'un autre.<br>
+				</ul><br>
+				<p>
+			</div>
+			<A href = "#programme">Retour au programme</A>
+	</div>
+    </body>
+</html>
